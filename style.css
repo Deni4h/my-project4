@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(38, 38, 107);
+    padding: 24px;  
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 40%;
+    
+}
+
+nav .logo {
+    color: white;
+    font-family: Pacifico;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat';
+    transition: all 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(123, 123, 194);
+}
+
+/* home */
+img {
+    width: 310px;
+    border-radius: 13px;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    ". foto ."
+    ". info ."
+    ". tersedia .";
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    margin: 30px;
+    text-align: center;
+    line-height: 37px;
+    font-family: 'Montserrat';
+}
+
+.foto1 {
+    grid-area: foto;
+}
+
+.info {
+    grid-area: info
+
+}
+
+
+
+.tersedia {
+    grid-area: tersedia;
+}
+
+.tersedia a {
+    color: black;
+}
+
+/* resposive  */
+
+@media screen and (max-width: 576px) {
+    nav {
+        justify-content: space-between;
+    }
+    
+    nav ul {
+        position: relative;
+        right: 38px;
+        justify-content: space-evenly;
+        width: 20%;
+        gap: 6px;
+    }
+
+    nav .logo {
+        font-size: 12px;
+    }
+}
